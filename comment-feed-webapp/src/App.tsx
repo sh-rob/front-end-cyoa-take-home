@@ -115,7 +115,7 @@ const App = () => {
             )}
           </Label>
           <Label>
-            Message
+            Comment
             <input
               {...register("message", { required: true })}
               type="text"

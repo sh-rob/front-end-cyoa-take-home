@@ -23,14 +23,10 @@ const CommentHeader = styled("div")({
   alignItems: "center",
 });
 
-const moment = require("moment");
-
 const Comment = ({ name, created, message }: Props) => {
   const dateString = created.toString();
   const [date, time] = dateString.split(" ");
-  console.log(time);
-  const realTime = moment(time, "hh:mm");
-  console.log(realTime);
+
   return (
     <CommentWrapper>
       <CommentHeader>
